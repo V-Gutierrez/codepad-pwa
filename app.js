@@ -3,7 +3,7 @@ var notes = [];
 // Registering all the event handlers when the page loads
 document.addEventListener("DOMContentLoaded", event => {
     renderNotes();
- 
+
     document.querySelector("form").addEventListener("submit", event => {
         event.preventDefault();
         const note = document.querySelector("textarea").value;
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", event => {
     });
 
     document.querySelector("#btnLearn").addEventListener("click", event => {
-        location.href = "https://frontendmasters.com";
+        location.href = "https://google.com";
     })
 })
 
