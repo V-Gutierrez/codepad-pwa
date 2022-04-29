@@ -2,5 +2,6 @@
   "name": "Codepad Masters",
   "short_name": "Codepad",
   "start_url": "./",
-  "orientation": "portrait"
+  "orientation": "portrait",
+  "theme_color": "#55887c"
 }
