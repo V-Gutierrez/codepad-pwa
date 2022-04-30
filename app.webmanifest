@@ -17,5 +17,13 @@
       "sizes": "1024x1024",
       "type": "image/png"
     }
+  ],
+  "description": "Notetaking app",
+  "screenshots": [
+    {
+      "src": "/icons/ss.png",
+      "sizes": "854x979",
+      "type": "image/png"
+    }
   ]
 }

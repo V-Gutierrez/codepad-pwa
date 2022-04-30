@@ -24,6 +24,34 @@ document.addEventListener("DOMContentLoaded", event => {
     document.querySelector("#btnLearn").addEventListener("click", event => {
         location.href = "https://google.com"
     })
+
+    document.getElementById("btnShare").addEventListener("click", event => {
+        navigator.share({
+            title: 'My Note',
+            text: 'This is my note',
+            url: '/'
+        })
+    })
+
+    let bipEvent = null
+
+    window.addEventListener('beforeinstallprompt', event => {
+        event.preventDefault()
+
+        bipEvent = event
+
+    })
+
+    document.getElementById("installpwa").addEventListener("click", event => {
+        /* chromium only */
+        if (bipEvent) {
+            bipEvent.prompt()
+        } else {
+            /* Incompatible or not on criteria */
+            alert("Use your browse menu")
+        }
+
+    })
 })
 
 // Render the notes on the DOM

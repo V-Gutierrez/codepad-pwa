@@ -109,10 +109,15 @@ body>#toolbar {
     background-color: var(--color-toolbar);
 }
 
-@media (display-mode: standalone) {
+@media (display-mode: standalone),
+(display-mode: minimal-ui) {
 
     /* All values from manifest display property are available in display mode */
     body>#toolbar {
         padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left) !important;
+    }
+
+    #iteminstall {
+        display: none
     }
 }
